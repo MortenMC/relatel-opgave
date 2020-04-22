@@ -41,9 +41,12 @@ class StatusComponent extends React.Component<Props, State>{
 
     render () {
 
-        return <div style={{ width: '100%', height: '1000px', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#282c34'}}>
+        return <div style={{ width: '100%', height: '1000px', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#282c34', flexDirection: 'column'}}>
+
+            <h1 style={{textAlign: 'center', color: 'white', textTransform: 'uppercase'}}>Driftsstatus</h1>
+            
             {this.state.statusData.map((element: any) =>
-                <div style={{border: '2px solid black', width: '85%', margin: '20px', padding: '20px', backgroundColor: 'white', borderRadius: '25px'}}>
+                <div style={{ width: '85%', margin: '20px', padding: '20px', backgroundColor: 'white', borderRadius: '25px', textAlign: 'center'}}>
                     <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                         <h2>
                             {element.title}
@@ -133,7 +136,7 @@ class StatusComponent extends React.Component<Props, State>{
                     </div>
  
                 </div>
-            )}   
+            )}
             
         </div>
     }
