@@ -85,7 +85,7 @@ class StatusComponent extends React.Component<Props, State>{
                         )}
                     </div>
 
-                    <p>
+                    <p style={{textAlign: 'left'}}>
                         {element.body}
                     </p>
 
